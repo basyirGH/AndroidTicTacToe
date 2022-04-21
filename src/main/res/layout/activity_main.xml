@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="333dp"
+        android:layout_height="333dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5E13CEDF">
+
+            <TableRow
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/r1c1"
+                    android:layout_width="111dp"
+                    android:layout_height="111dp"
+                    android:clickable="true"
+                    android:lineSpacingExtra="8sp"
+                    android:onClick="boardClickListener"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r1c2"
+                    android:layout_width="111dp"
+                    android:layout_height="111dp"
+                    android:clickable="true"
+                    android:lineSpacingExtra="8sp"
+                    android:onClick="boardClickListener"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r1c3"
+                    android:layout_width="111dp"
+                    android:layout_height="111dp"
+                    android:clickable="true"
+                    android:lineSpacingExtra="8sp"
+                    android:onClick="boardClickListener"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/r2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/r2c1"
+                    android:layout_width="111dp"
+                    android:layout_height="111dp"
+                    android:clickable="true"
+                    android:onClick="boardClickListener"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r2c2"
+                    android:layout_width="111dp"
+                    android:layout_height="111dp"
+                    android:clickable="true"
+                    android:onClick="boardClickListener"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r2c3"
+                    android:layout_width="111dp"
+                    android:layout_height="111dp"
+                    android:clickable="true"
+                    android:onClick="boardClickListener"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/r3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/r3c1"
+                    android:layout_width="111dp"
+                    android:layout_height="111dp"
+                    android:clickable="true"
+                    android:onClick="boardClickListener"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r3c2"
+                    android:layout_width="111dp"
+                    android:layout_height="111dp"
+                    android:clickable="true"
+                    android:onClick="boardClickListener"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r3c3"
+                    android:layout_width="111dp"
+                    android:layout_height="111dp"
+                    android:clickable="true"
+                    android:onClick="boardClickListener"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nextTeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn: X"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetListener"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
